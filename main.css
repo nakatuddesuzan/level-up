@@ -3,6 +3,11 @@ body{
     font-family:  Arial, sans-serif;
     width: 100%;
 }
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
 .heads{
  text-align: center;
 }
