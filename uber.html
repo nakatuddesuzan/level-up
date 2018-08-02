@@ -8,47 +8,46 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+    <div class = 'div1'>
+        <h1>UBER</h1>
+
+    </div>
 <div>
     <form id = "wrap">
         <div id = "content">
-            <h1>Sign Up to Ride</h1>
-            <h2>Safe, reliable rides in minutes</h2>
-            <table>
-                <tr>
-                    <td>
-                        <label for="fname"><b>First name (required)</b></label><br>
-                    </td>
-                    <td>
-                        <label for="lname"><b>Last name (required)</b></label>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" placeholder="First name" name="fname" required>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Last name" name="lname" required>
-                    </td>
-                </tr>
-
-            </table><br>
-                <label for="number"><b>Enter your phone number (required)</b></label><br>
-                <select>
-                    <option value="UG">+256</option>
-                    <option value="Kenya">+251</option>
-                </select>
-                <input type="text" placeholder="Phone number" name="number" required><br><br>
+            <div class = "heads">
+                <h1>Sign Up to Ride</h1>
+                <h2>Safe, reliable rides in minutes</h2>
+            </div>
+            <div class="container">
+                <div class="fname"
+                    <label for="fname"><b>First name (required)</b></label>
+                    <input type="text" placeholder="First name" name="fname" required>
+                </div>
+                <div>
+                    <label for="lname"><b>Last name (required)</b></label>
+                    <input type="text" placeholder="Last name" name="lname" required>
+                </div>
+            </div>
+            <label for="number"><b>Enter your phone number (required)</b></label><br>
+                <div class = 'contact'>
+                    <select>
+                        <option value="UG">+256</option>
+                        <option value="Kenya">+251</option>
+                    </select>
+                    <input type="text" placeholder="Phone number" name="number" required><br><br>
+                </div>
                 <label for="email"><b>Enter your email (required)</b></label><br>
                 <input type="text" placeholder="Email" name="email" required><br><br>
                 <label for="psw"><b>Enter a password (required)</b></label><br>
                 <input type="password" placeholder="Password" name="psw" required><br><br>
+                <a href="#"> Add a promo code </a><br><br>
 
-                <button type="submit" form="form1" value="Submit">Submit</button>
+                <button type="submit" value="signup">Sign Up</button> <br>
                 
                 <p>
-                By clicking "Sign Up", you agree to Uber's Terms of Use and acknowledge you have read<br> 
-                the Privacy Policy.
+                By clicking "Sign Up" you agree to Uber's clicking <a href="#"> Terms of Use</a> and acknowledge you have read<br>
+                the <a href="#">Privacy Policy</a>  
                 </p>
 
             
