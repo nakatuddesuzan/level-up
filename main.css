@@ -31,7 +31,7 @@ body{
     float: left;
     position: relative;
     left: -50%;
-}
+    }
 
 input[type=text],[type = password]{
     width: 100%;
@@ -42,6 +42,7 @@ input[type=text],[type = password]{
 }
 
 select {
+    width: 14%;
     padding: 16px 20px;
     margin: 8px 0;
     border: 1px solid #ccc;
@@ -49,7 +50,6 @@ select {
     
 
 }
-
 button[type=submit] {
     width: 100%;
     background-color:darkcyan;
@@ -75,4 +75,8 @@ flex-wrap: wrap;
 
 a{
     color: darkcyan;
+}
+.btn{
+ text-align: left;
+ font-size: 100%;
 }
