@@ -1,7 +1,7 @@
 import re
 
-class User(object):
 
+class User(object):
 
     def __init__(self, fname, lname, ccode, pnumber, email, password):
         self.fname = fname
@@ -20,13 +20,17 @@ class User(object):
         if not pwd:
             raise Exception("Field can't be empty")
         if len(pwd) < 8:
-            raise Exception("Weak password \n Password must have atleast 8 characters ")
+            raise Exception(
+                "Weak password \n Password must have atleast 8 characters ")
         if len(pwd) > 12:
-            raise Exception('Weak password \n password is too long It must be between 6 and 12 characters')
+            raise Exception(
+                'Weak password \n password is too long It must be between 6 and 12 characters')
         if not re.search(r'[0-9]', pwd):
-            raise Exception('Weak password \n Password should have atleast one integer')
+            raise Exception(
+                'Weak password \n Password should have atleast one integer')
         if pwd.isupper() or pwd.islower() or pwd.isdigit():
-            print("Weak password \n Either you need to include alphabets or \n try include both letter cases")
+            print(
+                "Weak password \n Either you need to include alphabets or \n try include both letter cases")
         self._password = pwd
 
     @property
@@ -44,32 +48,32 @@ class User(object):
     @property
     def fname(self):
         return self._name
-    
+
     @fname.setter
     def fname(self, value):
         if not value:
             raise Exception("Field can't be empty")
         if len(value) <= 2:
-            raise Exception("Name too sort \n  Not allowed") 
+            raise Exception("Name too sort \n  Not allowed")
         if re.compile('[!@#$%^&*:;?><.0-9]').match(value):
             raise ValueError("Invalid characters not allowed")
-            
+
         self._name = value
 
     @property
     def lname(self):
         return self._name
-    
+
     @lname.setter
     def lname(self, value):
         if not value:
             raise Exception("Field can't be empty")
         if len(value) <= 2:
-            raise Exception("Name too sort \n  Not allowed") 
+            raise Exception("Name too sort \n  Not allowed")
         if value == self.fname:
             raise Exception('Firstname cannot be the same as second name')
         if re.compile('[!@#$%^&*:;?><.0-9]').match(value):
-            raise ValueError("Invalid characters not allowed")   
+            raise ValueError("Invalid characters not allowed")
         self._name = value
 
     @property
@@ -80,18 +84,6 @@ class User(object):
     def pnumber(self, value):
         if not value:
             raise Exception("Field can't be empty")
-        if len(str(value ))> 9:
+        if len(str(value)) > 9:
             raise ValueError('Invalid contact not allowed')
-        
         self._pnumber = value
-
-
-
-
-        
-
-
-
-
-
-
