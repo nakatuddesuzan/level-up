@@ -1,36 +1,46 @@
 body{
     background-color: #f8f8f9;
     font-family:  Arial, sans-serif;
-    width: 100%;
 }
+
 @media only screen and (max-width: 600px) {
     body {
-        background-color: lightblue;
+        background-color: darkcyan;
+        
     }
+    .container{
+        flex-direction: column;
+    }
+    
+    .div2{
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    input[type=text],[type = password]{
+        width: 100%;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
 }
 .heads{
  text-align: center;
 }
-.div1 {
-    width: 6%;
-    border: 1px solid black;
-    padding: 25px;
-    margin: 5px auto;
-    background-color: black;
-    color: white;
-    
 
+img{
+    height: 100px;
+    width: 150px;
 }
+
+.divcenter{
+    text-align: center;
+}
+
 #wrap {
-    float: left;
-    position: relative;
-    left: 50%;
-}
-
-#content {
-    float: left;
-    position: relative;
-    left: -50%;
+    width: 30%;
     }
 
 input[type=text],[type = password]{
@@ -42,9 +52,9 @@ input[type=text],[type = password]{
 }
 
 select {
-    width: 14%;
-    padding: 16px 20px;
-    margin: 8px 0;
+    width: 20%;
+    padding: 16px 5px;
+    margin: 8px 0px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     
@@ -66,7 +76,6 @@ button[type=submit] {
 
 .container {
 display: flex;
-flex-wrap: wrap;
 }
 
 .fname{
@@ -79,4 +88,10 @@ a{
 .btn{
  text-align: left;
  font-size: 100%;
+}
+
+.div2{
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
 }
