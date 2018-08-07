@@ -83,7 +83,14 @@ class User(object):
     @pnumber.setter
     def pnumber(self, value):
         if not value:
-            raise Exception("Field can't be empty")
-        if len(str(value)) > 9:
-            raise ValueError('Invalid contact not allowed')
-        self._pnumber = value
+            raise Exception('Contact field can\'t be empty' )
+        try:
+            value = int(value)
+            if not len(str(value)) == 9:
+                print('Invalid contact not allowed')
+            if len(str(value)) == 9:
+                self._pnumber = value
+        except ValueError:
+            print('Expected an integer')
+
+
