@@ -91,6 +91,6 @@ class User(object):
             if len(str(value)) == 9:
                 self._pnumber = value
         except ValueError:
-            print('Expected an integer')
+            print('Expected an integer found a string')
 
 
