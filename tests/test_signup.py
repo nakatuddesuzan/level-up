@@ -12,8 +12,16 @@ class TestUser(unittest.TestCase):
         self.assertTrue(User("sue" ,"mart", "256", "774868529", "sue@gmail.com", "Sensible123"))
 
     def test_empty_password_field(self):
-        user = User("sue" ,"mart", "256", "774868529", "sue@gmail.com", "Sensible123")
-        self.assertRaises( Exception,  user.password)
+        password = ""
+        self.assertRaises( Exception,  User, password)
+
+    def test_empty_email_field(self):
+        email = ""
+        self.assertRaises( Exception,  User, email)
+
+    def test_invalid_email_address(self):
+        email = "sue@gmail.com"
+        self.assertRaises( Exception,  User, email)
 
             
 
