@@ -9,7 +9,7 @@ install:
 
 # command to run tests
 script:
-  - pytest -v --with-coverage --cover-package=develop
+  - pytest
 
 after_success:
   - coveralls
