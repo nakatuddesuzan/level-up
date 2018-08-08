@@ -19,12 +19,9 @@ class User(object):
     def password(self, pwd):
         if not pwd:
             raise Exception("Field can't be empty")
-        if len(pwd) < 8:
+        if len(pwd) < 8 and len(pwd) > 12:
             raise Exception(
-                "Weak password \n Password must have atleast 8 characters ")
-        if len(pwd) > 12:
-            raise Exception(
-                'Weak password \n password is too long It must be between 6 and 12 characters')
+                "Weak password \n Password must be 8 characters long ")
         if not re.search(r'[0-9]', pwd):
             raise Exception(
                 'Weak password \n Password should have atleast one integer')
