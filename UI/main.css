@@ -1,0 +1,94 @@
+body{
+    background-color: #f8f8f9;
+    font-family:  Arial, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+    }
+    
+    .div2{
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: center;
+        padding: 2px 5px;
+    }
+    input[type= text],[type = password]{
+        width: 100%;
+        padding: 2px 5px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+}
+
+.heads{
+ text-align: center;
+}
+
+img{
+    height: 100px;
+    width: 150px;
+}
+
+.divcenter{
+    text-align: center;
+}
+
+#wrap {
+    width: 30%;
+    }
+
+input[type=text],[type = password]{
+    width: 100%;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+select {
+    width: 20%;
+    padding: 16px 5px;
+    margin: 8px 0px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+
+}
+button[type=submit] {
+    width: 100%;
+    background-color:darkcyan;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.contact{
+    display: flex;
+}
+
+.container {
+display: flex;
+}
+
+.fname{
+    margin-right: 5px;
+}
+
+a{
+    color: darkcyan;
+}
+.btn{
+ text-align: left;
+ font-size: 100%;
+}
+
+.div2{
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+}
